@@ -57,7 +57,7 @@ jobs:
         aws-region: ${{ env.AWS-REGION }}
         instance-ids: ${{ env.INSTANCE-IDS }}
 #        command: sudo docker stop jolly_lichterman
-        command: /bin/sh deploy.sh
+        command: deploy.sh
         working-directory: ${{ env.WORKING-DIRECTORY }}
         comment: AWS SSM Send-Command is ran
 
