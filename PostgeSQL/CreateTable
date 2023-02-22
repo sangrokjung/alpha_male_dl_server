@@ -1,0 +1,39 @@
+CREATE TABLE "user_tbl"(
+    "id" SERIAL,
+    "user_img_s3_url" VARCHAR(700) NULL,
+    "user_img" TEXT NOT NULL,
+    "cft_result" VARCHAR(30) NULL,
+    "age" DATE NOT NULL,
+    "mbti" VARCHAR(30) NOT NULL,
+    "created_at" DATE NULL,
+    "created_by" VARCHAR(255) NULL
+);
+ALTER TABLE
+    "user_tbl" ADD PRIMARY KEY("id");
+    
+CREATE TABLE "male_tbl"(
+    "male_id" INTEGER NOT NULL,
+    "male_type" VARCHAR(30) NOT NULL,
+    "cft_url" VARCHAR(300) NOT NULL,
+    "dsc_text" VARCHAR(500) NOT NULL,
+    "created_at" DATE NOT NULL,
+    "created_by" VARCHAR(255) NOT NULL,
+    "updated_at" DATE NOT NULL,
+    "updated_by" VARCHAR(255) NOT NULL
+);
+ALTER TABLE
+    "male_tbl" ADD PRIMARY KEY("male_id");
+
+CREATE TABLE "img_tbl"(
+    "id" SERIAL,
+    "male_id" INTEGER NOT NULL,
+    "url" TEXT NOT NULL,
+    "created_by" VARCHAR(255) NOT NULL,
+    "created_at" DATE NOT NULL,
+    "updated_by" VARCHAR(255) NOT NULL,
+    "updated_at" DATE NOT NULL
+);
+ALTER TABLE
+    "img_tbl" ADD PRIMARY KEY("id");
+ALTER TABLE
+    "img_tbl" ADD CONSTRAINT "img_tbl_male_id_foreign" FOREIGN KEY("male_id") REFERENCES "male_tbl"("male_id");

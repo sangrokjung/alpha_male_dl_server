@@ -1,0 +1,40 @@
+
+pandas
+numpy
+pillow
+torch
+torchvision
+torchaudio
+natsort
+typing
+opencv-python-headless
+
+uvicorn[standard]==0.20.0
+gunicorn==20.1.0
+fastapi[all]==0.88.0
+
+psycopg2-binary
+FastAPI-SQLAlchemy
+alembic
+python-dotenv
+
+boto3
+requests
+
+
+# uvicorn[standard]==0.20.0
+# gunicorn==20.1.0
+# fastapi[all]==0.88.0
+#
+# python-dotenv
+# psycopg2-binary
+# FastAPI-SQLAlchemy
+# alembic
+# python-dotenv
+#
+# Pillow
+# numpy
+# boto3
+# natsort
+# requests
+#####################
