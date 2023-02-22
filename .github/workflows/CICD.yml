@@ -9,7 +9,13 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]    
+    branches: [ main ]
+
+env:
+  AWS-REGION: ap-northeast-2
+  INSTANCE-IDS: i-0a5c39ee253881065
+  COMMAND: sudo docker stop jolly_lichterman&& docker image prune -a&& aws s3 sync s3://alpha-model-repo/completion_model/ ./&& aws s3 sync s3://alpha-model-repo/model_weight/ /home/ubuntu/model/Model/&& docker build -t server&& docker run --name jolly_lichterman -p 8000:80 server
+  WORKING-DIRECTORY: /home/ubuntu/model
   
  
   # 이부분은 위의 trigger가 없어도 수동으로 동작 할 수 있게끔 해주는 역할을 합니다.
@@ -45,23 +51,14 @@ jobs:
       run: aws s3 sync --region ap-northeast-2 ./ s3://alpha-model-repo/completion_model/
       
     - name: AWS SSM Send-Command
-      # You may pin to the exact commit or the version.
-      # uses: peterkimzz/aws-ssm-send-command@8d32fbc744c127490e85b29eefff09d40494fc86
       uses: peterkimzz/aws-ssm-send-command@v1.1.1
       with:
-        # AWS access key id
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        # AWS secret access key
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        # Where EC2 instance is
-        aws-region: ap-northeast-2
-        # AWS EC2 Instance id or ids
-        instance-ids: i-0a5c39ee253881065
-        # Bash command you want to execute
-        command: sudo docker stop jolly_lichterman&& docker image prune -a&& aws s3 sync s3://alpha-model-repo/completion_model/ ./&& aws s3 sync s3://alpha-model-repo/model_weight/ /home/ubuntu/model/Model/&& docker build -t server&& docker run --name jolly_lichterman -p 8000:80 server
-        # Command execution location
-        working-directory: /home/ubuntu/model
-        # Comment for Send-Command
+        aws-region: ${{ env.AWS-REGION }}
+        instance-ids: ${{ env.INSTANCE-IDS }}
+        command: /bin/sh deploy.sh
+        working-directory: ${{ env.WORKING-DIRECTORY }}
         comment: AWS SSM Send-Command is ran
 
 

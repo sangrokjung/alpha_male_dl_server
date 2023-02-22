@@ -2,6 +2,13 @@ import boto3
 import os
 import base64
 import natsort
+from dotenv import load_dotenv
+
+load_dotenv()
+
+id = os.environ.get('Access_key_ID')
+pwd = os.environ.get('Secret_access_key')
+
 
 
 def s3_connection():
@@ -10,8 +17,8 @@ def s3_connection():
         s3 = boto3.client(
             service_name="s3",
             region_name="ap-northeast-2",
-            aws_access_key_id='AKIAV276ELAGBWVWO52B',
-            aws_secret_access_key='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'
+            aws_access_key_id=id,
+            aws_secret_access_key=pwd
         )
     except Exception as e:
         print(e)

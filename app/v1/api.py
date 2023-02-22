@@ -47,9 +47,6 @@ async def RegisterResult(first_user: first_user_tbl, result: last_result, db: Se
     Model_rst = run(first_user.user_img)
 
     if Model_rst == 0 or Model_rst == 6:
-        # user = db.query(models.Users).filter_by(user_img=first_user.user_img).first()
-        # db.delete(user)
-        # db.commit()
         return result
     elif Model_rst >= 1 and Model_rst < 6:
         # Model_rst = model3('/Users/snagrockjung/alpha_male_Back/test_img/', '/Users/snagrockjung/alpha_male_Back/Model/model249.pth')
