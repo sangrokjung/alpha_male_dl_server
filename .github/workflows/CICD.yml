@@ -14,7 +14,6 @@ on:
 env:
   AWS-REGION: ap-northeast-2
   INSTANCE-IDS: i-0a5c39ee253881065
-  COMMAND: sudo docker stop jolly_lichterman&& docker image prune -a&& aws s3 sync s3://alpha-model-repo/completion_model/ ./&& aws s3 sync s3://alpha-model-repo/model_weight/ /home/ubuntu/model/Model/&& docker build -t server&& docker run --name jolly_lichterman -p 8000:80 server
   WORKING-DIRECTORY: /home/ubuntu/model
   
  
@@ -57,8 +56,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS-REGION }}
         instance-ids: ${{ env.INSTANCE-IDS }}
-        command: sudo docker stop jolly_lichterman
-#        command: /bin/sh deploy.sh
+#        command: sudo docker stop jolly_lichterman
+        command: /bin/sh deploy.sh
         working-directory: ${{ env.WORKING-DIRECTORY }}
         comment: AWS SSM Send-Command is ran
 
