@@ -3,26 +3,64 @@
 <p align="center">
   <img src="test_img/alpha.png"></a>
 </p>
+<p align="center">
+    <em>.paint by dall-e-2</em>
+</p>
+
+---
+
+***자신의 외모 유형이 궁금한 사람들을 AI를 통해 궁금증을 해소 할 수 있게 도와준다.*** 
+
+
+***결과로 도출된 유형에 따라 사용자는 만족감을 얻거나 타인 지인과 비교하여 부가적인 즐거움을 얻을 수 있다.***
+
+
+---
+## Technologies Used
+
 
 
 ---
 
-## Production Crew
-
-**SangRok Jung**: Back-End, Cloud
-> * 
-> * <a href="https://github.com/sangrokjung" target="_blank">github</a>
+## Project Team
 
 
 
+> **SangRok Jung** : <a href="https://github.com/sangrokjung" target="_blank">github</a>
+> * Lead
+>   * Project Lead.
+>   * Managing GitHub Repositories and Policies.
+>   * Notion, Upbase Management.
+>   * Manage schedules.
+> * Back-End
+>   * Leverage FastAPI to create POST Protocols for the Client to send.
+>   * Create an API to call DL.
+>   * Create an API that stores data sent by the Client in DB.
+>   * Connect with DataBase.
+> * Cloud
+>   * Building an EC2 Ubuntu environment for DL learning. (G4dn, P4)
+>   * Deploying DL Server CICD with GitHub Actions and S3, EC2.
+>   * Deploying Back-End Server CICD with GitHub Actions and ECR, ECS, and ELB.
+>   * Deploying RDBMS PostgreSQL using RDS.
+> * DataBase.
+>   *  Schema, table, and data CRUD utilizing PostgreSQL.
+>   *  ERD Production.
+> * Mobile
+>   * Design with Mockup.
+> * DL/ML
+>   * Collection of data through crawling.
 
-**Seungwon Lee**: 
 
-<a href="https://github.com/diet-teacher" target="_blank">github</a>
 
-**Jaehee Han**: Mobile
 
-<a href="https://github.com/82Hardy-J" target="_blank">github</a>
+> **Seungwon Lee** : <a href="https://github.com/diet-teacher" target="_blank">github</a>
+> * DL/ML
+>   * Collection of data through crawling.
+
+> **Jaehee Han** : <a href="https://github.com/82Hardy-J" target="_blank">github</a>
+> * Mobile
+>   * Collection of data through crawling.
+> * DL/ML
 
 ---
 
