@@ -14,7 +14,7 @@ on:
 env:
   AWS-REGION: ap-northeast-2
   INSTANCE-IDS: i-0a5c39ee253881065
-  WORKING-DIRECTORY: /home/ubuntu/model
+  WORKING-DIRECTORY: /home/ubuntu
   
  
   # 이부분은 위의 trigger가 없어도 수동으로 동작 할 수 있게끔 해주는 역할을 합니다.
@@ -57,7 +57,7 @@ jobs:
         aws-region: ${{ env.AWS-REGION }}
         instance-ids: ${{ env.INSTANCE-IDS }}
 #        command: sudo docker stop jolly_lichterman
-        command: deploy.sh
+        command: /home/ubuntu/deploy.sh
         working-directory: ${{ env.WORKING-DIRECTORY }}
         comment: AWS SSM Send-Command is ran
 

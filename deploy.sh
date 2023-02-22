@@ -2,7 +2,7 @@
 
 sudo docker stop jolly_lichterman&& \
 sudo docker image prune -a&& \
-sudo aws s3 sync s3://alpha-model-repo/completion_model/ ./&& \
+sudo aws s3 sync s3://alpha-model-repo/completion_model/ /home/ubuntu/model/&& \
 sudo aws s3 sync s3://alpha-model-repo/model_weight/ /home/ubuntu/model/Model/&& \
 sudo aws s3 sync s3://alpha-model-repo/env_repo/S3/ /home/ubuntu/model/app/v1/&& \
 sudo aws s3 sync s3://alpha-model-repo/env_repo/S3/ /home/ubuntu/model/app/v1/&& \
