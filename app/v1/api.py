@@ -123,105 +123,6 @@ async def RegisterResult(first_user: first_user_tbl, result: last_result, db: Se
 
         return result
 
-@router.post("/RegisterUserImg")
-async def RegisterUserImg(first_user: first_user_tbl, result: last_result, db: Session = Depends(get_db)):
-    c_first_user = models.Users()
-    c_first_user.user_img = first_user.user_img
-    c_first_user.age = first_user.age
-    c_first_user.mbti = first_user.mbti
-
-    # db.add(c_first_user)
-    # db.commit()
-
-    # model_1_rst = model1('/Users/snagrockjung/alpha_male_Back/test_img/', '/Users/snagrockjung/alpha_male_Back/Model/alphav1.pth')
-
-    url = 'http://127.0.0.1:8000/api/GetModelResult'  # Replace with the actual API endpoint
-    headers = {'accept': 'application/json', 'Content-Type': 'application/json'}  # Replace with the actual request headers
-    data = {"bs64_str": f"{first_user.user_img}"}
-
-    Model_rst = request_model(url, headers, data)
-
-    if Model_rst == 0 or Model_rst == 6:
-        # user = db.query(models.Users).filter_by(user_img=first_user.user_img).first()
-        # db.delete(user)
-        # db.commit()
-        return result
-    elif Model_rst >= 1 and Model_rst < 6:
-        # Model_rst = model3('/Users/snagrockjung/alpha_male_Back/test_img/', '/Users/snagrockjung/alpha_male_Back/Model/model249.pth')
-        s3_url = handle_upload_img(first_user.user_img)  # S3에 파일을 전송함과 동시에\ 주소 획득.
-        Model_rst = Model_rst
-        result.human = "True"
-        type = conv_type(Model_rst)
-        if Model_rst == 1:
-            result.male_type = "Alpha"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "alpha").first().dsc_text
-            ID = make_4_num(27, 36)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 2:
-            result.male_type = "Beta"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "beta").first().dsc_text
-            ID = make_4_num(37, 49)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 3:
-            result.male_type = "Gamma"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "gamma").first().dsc_text
-            ID = make_4_num(50, 62)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 4:
-            result.male_type = "Delta"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "delta").first().dsc_text
-            ID = make_4_num(63, 73)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 5:
-            result.male_type = "Omega"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "omega").first().dsc_text
-            ID = make_4_num(74, 84)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        c_first_user.user_img_s3_url = s3_url
-        c_first_user.cft_result = type
-        c_first_user.created_at = datetime.now()
-        c_first_user.created_by = "JSR"
-        db.add(c_first_user)
-        db.commit()
-
-        return result
-
-
 @router.post("/RegisterUserImg_sample")
 async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, result: last_result, db: Session = Depends(get_db)):
     c_first_user = models.Users()
@@ -248,7 +149,7 @@ async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, resu
         result.human = "True"
         type = conv_type(Model_rst)
         if Model_rst == 1:
-            result.male_type = "alpha"
+            result.male_type = "Alpha"
             result.dsc = db.query(models.Male).filter(models.Male.male_type == "alpha").first().dsc_text
             ID = make_4_num(27, 36)
             result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
@@ -256,7 +157,7 @@ async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, resu
             result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
             result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
         elif Model_rst == 2:
-            result.male_type = "beta"
+            result.male_type = "Beta"
             result.dsc = db.query(models.Male).filter(models.Male.male_type == "beta").first().dsc_text
             ID = make_4_num(37, 49)
             result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
@@ -264,7 +165,7 @@ async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, resu
             result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
             result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
         elif Model_rst == 3:
-            result.male_type = "gamma"
+            result.male_type = "Gamma"
             result.dsc = db.query(models.Male).filter(models.Male.male_type == "gamma").first().dsc_text
             ID = make_4_num(50, 62)
             result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
@@ -272,7 +173,7 @@ async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, resu
             result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
             result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
         elif Model_rst == 4:
-            result.male_type = "delta"
+            result.male_type = "Delta"
             result.dsc = db.query(models.Male).filter(models.Male.male_type == "delta").first().dsc_text
             ID = make_4_num(63, 73)
             result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
@@ -280,7 +181,7 @@ async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, resu
             result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
             result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
         elif Model_rst == 5:
-            result.male_type = "omega"
+            result.male_type = "Omega"
             result.dsc = db.query(models.Male).filter(models.Male.male_type == "omega").first().dsc_text
             ID = make_4_num(74, 84)
             result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
