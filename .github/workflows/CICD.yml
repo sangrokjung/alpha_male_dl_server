@@ -57,7 +57,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS-REGION }}
         instance-ids: ${{ env.INSTANCE-IDS }}
-        command: /bin/sh deploy.sh
+        command: sudo docker stop jolly_lichterman
+#        command: /bin/sh deploy.sh
         working-directory: ${{ env.WORKING-DIRECTORY }}
         comment: AWS SSM Send-Command is ran
 
