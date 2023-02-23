@@ -253,7 +253,6 @@
 
 <p align="center">
     <img src="test_img/score_pie_plot.png" height="400" width=400"><br>
-    <strong>설문조사 결과 얼굴 유형별 분포도</strong>
 </p>
 
 ### 유형 분류 결과
