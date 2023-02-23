@@ -229,7 +229,8 @@
 
 
 ## 사전 설문조사
-
+**팀원들 각자의 외모에 대한 기준이 서로 상이함에 따라 외모 유형을 나누는데 어려움이 존재.<br>
+설문조사를 통해 많은 의견이 확보되면 누구나 어느정도 납득이 가능한 대중화된 데이터를 얻을수 있을 것을 기대함.**<br>
 
 <p align="center">
     <img src="test_img/pie_plot.png" height="400" width="400">
@@ -485,6 +486,43 @@ async def RegisterResult(first_user: first_user_tbl, result: last_result, db: Se
     <img src="test_img/DL_SERVER_Diagram.PNG">
 </p>
 
+### Docker
+**The image was built with Ubuntu-based python 3.10 version. <br>
+Packages that require installation were installed through requirements.**
+
+
+```dockerfile
+FROM ubuntu:latest
+
+WORKDIR /app
+
+COPY ./requirements.txt /app/requirements.txt
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3.10 \
+    python3.10-dev \
+    python3-pip \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libglib2.0-0 \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev
+
+RUN pip3 install opencv-python-headless
+
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+
+COPY . /app/
+
+CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.0", "--port", "80" ]
+
+COPY ./ /app/
+```
 
 ## DataBase
 
