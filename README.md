@@ -14,8 +14,28 @@
     </p>
 </div>
 
+<br>
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-project">About Project</a>
+    <li><a href="#tech-used">Tech Used</a>
+    <li><a href="#project-team">Project Team</a></li>
+    <li><a href="#user-stories">User Stories</a></li>
+    <li><a href="#survey">Survey</a></li>
+    <li><a href="#back-end-server">Back-End Server</a></li>
+    <li><a href="#dl-server">DL Server</a></li>
+    <li><a href="#data-base">Data Base</a></li>
+    <li><a href="#dl">DL</a></li>
+    <li><a href="#mobile">Mobile</a></li>
+  </ol>
+</details>
 
+<br>
+
+<!-- ABOUT PROJECT -->
 ## About Project
 
 <div>
@@ -49,7 +69,7 @@
 > **학습이 완료된 model을 통해 사용자의 얼굴 유형을 분석 후 결과 제공.**
 
 
-
+<!-- TECH USED -->
 ## TECH Used
 
 ### MOBILE
@@ -92,7 +112,7 @@
 
 
 
-
+<!-- PROJECT TEAM -->
 ## Project Team
 
 
@@ -147,7 +167,7 @@
 > * DL/ML
 >   * Collection of data through crawling.
 
-
+<!-- USER STORIES -->
 ## User Stories
 > Epics
 > * 메인 (뷰)
@@ -227,7 +247,7 @@
 
 ---
 
-
+<!-- SURVEY -->
 ## 사전 설문조사
 **팀원들 각자의 외모에 대한 기준이 서로 상이함에 따라 외모 유형을 나누는데 어려움이 존재.<br>
 설문조사를 통해 많은 의견이 확보되면 누구나 어느정도 납득이 가능한 대중화된 데이터를 얻을수 있을 것을 기대함.**<br>
@@ -263,6 +283,8 @@
 > * Delta : 홍석천, 이준석, 유병재, 김풍, 강호동, 남창희, 유승민, 이진호, 마동석, 조세호, 피식대학 김민수, 주호민, 박지성, 윤석열, 이재명, 안철수, 장동민, 김범수, 이천수, 대성, 고창석
 > * Omega : 홍구, 오메가 사피엔, 진중권, 천하람, 미키광수, 최욱, 곽튜브, 딕헌터, 오달수, 흑자헬스, 변희재, 래퍼 면도, 염따, 김제동, 정종철, 국민의 힘 김재원, 오지헌
 
+
+<!-- BACK-END SERVER -->
 ## BACK-END SERVER
 
 **Before building a DL server, build a backend server to develop protocols to send and receive with the Client.**
@@ -399,6 +421,8 @@ CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.
 COPY ./ /app/
 ```
 
+
+<!-- DL SERVER -->
 ## DL Server
 
 **When the client calls the server's API, the result value is stored in the DB and S3 Bucket through DL MODEL learned and the response body is returned to the client.**
@@ -548,6 +572,7 @@ CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.
 COPY ./ /app/
 ```
 
+<!-- DATA BASE -->
 ## DataBase
 
 **user_tbl** <br>
@@ -575,9 +600,12 @@ The data table to be sent to the Client based on the results of the DL MODEL.
 
 
 
+<!-- DL -->
 ## DL
 
 ### 
 <p align="center">
     <img src="test_img/model_result.png">
 </p>
+
+<!-- MOBILE -->
