@@ -147,3 +147,11 @@
 
 ---
 
+
+## BACK-END
+
+### CICD
+<p align="center">
+    <img src="test_img/BACK-END_SERVER_CICD.PNG">
+</p>
+
