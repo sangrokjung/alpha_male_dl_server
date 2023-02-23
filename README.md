@@ -40,7 +40,7 @@
 
 <div>
     <p align="center">
-        <img src="test_img/view_1.png" width="200" height="410">
+        <img src="test_img/v1.png" width="200" height="410">
         <img src="test_img/alpha_result_v3.png" width="200" height="410">
     </p>
     <p align="center">
