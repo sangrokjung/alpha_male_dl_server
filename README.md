@@ -375,6 +375,30 @@ async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, resu
     <img src="test_img/BACK-END_SERVER_CICD.PNG">
 </p>
 
+### Docker
+**The image was built based on python 3.10. <br>
+Packages that require installation were installed through requirements.**
+```dockerfile
+FROM python:3.10-alpine
+
+WORKDIR /app
+
+COPY ./requirements.txt /app/requirements.txt
+
+RUN echo $PATH
+RUN echo "export PATH=$PATH:/usr/local/bin/docker" >> ~/.bashrc
+RUN cat ~/.bashrc
+RUN echo $PATH
+
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+
+COPY . /app/
+
+CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.0", "--port", "80" ]
+
+COPY ./ /app/
+```
+
 ## DL Server
 
 **When the client calls the server's API, the result value is stored in the DB and S3 Bucket through DL MODEL learned and the response body is returned to the client.**
