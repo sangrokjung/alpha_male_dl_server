@@ -475,6 +475,24 @@ async def RegisterResult(first_user: first_user_tbl, result: last_result, db: Se
 
 ## DataBase
 
+**user_tbl** <br>
+The table where the data entered by the USER will be stored.
+> * user_img_s3 : Address of s3 where USER IMG will be stored.
+> * user_img : USER IMG in base64 format.
+> * cft_result : USER's classification results.
+> * age : Date of birth of USER.
+> * mbti : USER's MBTI. <br>
+
+**male_tbl** <br>
+The data table to be sent to the Client based on the results of the DL MODEL.
+> * male_ID : ID of the classification type.
+> * male_type : Type classification value.
+> * dsc_txt : Description values by type. <br>
+ 
+**img_tbl** <br>
+> * male_ID : IMG by type stored in base64 format.
+> * male_type : Type classification value.
+> * dsc_txt : Description values by type. <br>
 
 
 <p align="center">
