@@ -43,6 +43,9 @@
         <img src="test_img/view_1.png" width="200" height="410">
         <img src="test_img/alpha_result_v3.png" width="200" height="410">
     </p>
+    <p align="center">
+        <img src="test_img/Client_diagrm.PNG" width="600" height="400">
+    </p>
 </div>
 
 ## BMC
@@ -166,6 +169,7 @@
 >   * Designed the app logo.
 > * DL/ML
 >   * Collection of data through crawling.
+>   * Model Testing.
 
 <!-- USER STORIES -->
 ## User Stories
