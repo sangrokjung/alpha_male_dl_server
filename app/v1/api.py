@@ -49,7 +49,6 @@ async def RegisterResult(first_user: first_user_tbl, result: last_result, db: Se
     if Model_rst == 0 or Model_rst == 6:
         return result
     elif Model_rst >= 1 and Model_rst < 6:
-        # Model_rst = model3('/Users/snagrockjung/alpha_male_Back/test_img/', '/Users/snagrockjung/alpha_male_Back/Model/model249.pth')
         s3_url = handle_upload_img(first_user.user_img)  # S3에 파일을 전송함과 동시에\ 주소 획득.
         Model_rst = Model_rst
         result.human = "True"
@@ -130,20 +129,11 @@ async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, resu
     c_first_user.age = first_user.age
     c_first_user.mbti = first_user.mbti
 
-    # db.add(c_first_user)
-    # db.commit()
-
-    # model_1_rst = model1('/Users/snagrockjung/alpha_male_Back/test_img/', '/Users/snagrockjung/alpha_male_Back/Model/alphav1.pth')
     Model_rst
 
-
     if Model_rst == 0 or Model_rst == 6:
-        # user = db.query(models.Users).filter_by(user_img=first_user.user_img).first()
-        # db.delete(user)
-        # db.commit()
         return result
     elif Model_rst >= 1 and Model_rst < 6:
-        # Model_rst = model3('/Users/snagrockjung/alpha_male_Back/test_img/', '/Users/snagrockjung/alpha_male_Back/Model/model249.pth')
         s3_url = handle_upload_img(first_user.user_img) # S3에 파일을 전송함과 동시에\ 주소 획득.
         Model_rst = Model_rst
         result.human = "True"
