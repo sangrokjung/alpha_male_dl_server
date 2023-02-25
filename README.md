@@ -2,7 +2,8 @@
 # ALPHA PROJECT
 <div>
     <p align="center">
-      <img src="test_img/alpha.png" width="500" height="310">
+        <img src="test_img/alphamale_logo_1x1.png" width="500" height="500">
+        <img src="test_img/alpha.png" width="500" height="310"><br>
     </p>
     <p align="center">
         <em>.paint by dall-e-2</em>
@@ -10,7 +11,9 @@
     <p align="center">
         <strong>GitHub Repository</strong> <br>
         <a href="https://github.com/sangrokjung/alpha_male_Front"><strong> Mobile GitHub Repo</strong></a> · 
-        <a href="https://github.com/sangrokjung/alpha_male_dl_server"><strong> DL Server GitHub Repo</strong></a>
+        <a href="https://github.com/sangrokjung/alpha_male_dl_server"><strong> DL Server GitHub Repo</strong></a><br>
+        <a href="https://github.com/sangrokjung/alpha_male_dl_server"><strong> Application Guide Video</strong></a> · 
+        <a href="https://github.com/sangrokjung/alpha_male_dl_server"><strong> Application demonstration video</strong></a>
     </p>
 </div>
 
@@ -40,11 +43,10 @@
 
 <div>
     <p align="center">
-        <img src="test_img/v1.png" width="200" height="410">
-        <img src="test_img/alpha_result_v3.png" width="200" height="410">
+        <img src="test_img/v3_beta.png" width="200" height="410">
     </p>
     <p align="center">
-        <img src="test_img/Client_diagrm.PNG" width="600" height="400">
+        <img src="test_img/Client_diagrm.PNG" width="600" height="450">
     </p>
 </div>
 
@@ -127,6 +129,7 @@
 >   * Notion, Upbase Management.
 >   * Manage schedules.
 >   * Planning and production of readme.
+>   * ppt planning and production.
 > * Back-End
 >   * Imaging DL Servers with Dockers
 >   * Leverage FastAPI to create POST Protocols for the Client to send.
@@ -624,6 +627,9 @@ The data table to be sent to the Client based on the results of the DL MODEL.
 ### 3. 선호도
 ![flutterlove](https://user-images.githubusercontent.com/113483259/220819372-347604a8-7e4c-4150-9bac-e41cdfc46ece.png)
 ![rnlove](https://user-images.githubusercontent.com/113483259/220819375-1ae41dd9-b0f8-42cc-baae-8ed14bfbe00b.png)
+<p align="left">
+    <img src="test_img/flutterVsRn.png>
+</p>
 >   * Flutter가 RN에 비해 점유율과 선호도가 높으며 실제 사업및 실제 프로젝트에서 사용중이다.
 
 ## 사용 방법
