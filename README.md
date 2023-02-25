@@ -628,9 +628,14 @@ The data table to be sent to the Client based on the results of the DL MODEL.
 ![flutterlove](https://user-images.githubusercontent.com/113483259/220819372-347604a8-7e4c-4150-9bac-e41cdfc46ece.png)
 ![rnlove](https://user-images.githubusercontent.com/113483259/220819375-1ae41dd9-b0f8-42cc-baae-8ed14bfbe00b.png)
 <p align="left">
-    <img src="test_img/flutterVsRn.png>
+    <img src="test_img/flutterVsRn.png">
 </p>
->   * Flutter가 RN에 비해 점유율과 선호도가 높으며 실제 사업및 실제 프로젝트에서 사용중이다.
+
+
+**Flutter가 RN에 비해 점유율과 선호도가 높으며 실제 사업및 실제 프로젝트에서 사용중이다.**
+
+
+
 
 ## 사용 방법
 1. 어플을 설치 후 실행시킨다.
