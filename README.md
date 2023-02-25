@@ -47,7 +47,6 @@
         <img src="test_img/v3_beta.png" width="200" height="410">
     </p>
     <p align="center">
-        
         <img src="test_img/Client_diagrm.PNG" width="600" height="450">
     </p>
 </div>
