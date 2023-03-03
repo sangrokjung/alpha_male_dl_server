@@ -12,8 +12,9 @@
         <strong>GitHub Repository</strong> <br>
         <a href="https://github.com/sangrokjung/alpha_male_Front"><strong> Mobile GitHub Repo</strong></a> · 
         <a href="https://github.com/sangrokjung/alpha_male_dl_server"><strong> DL Server GitHub Repo</strong></a><br>
-        <a href="https://github.com/sangrokjung/alpha_male_dl_server"><strong> Application Guide Video</strong></a> · 
-        <a href="https://github.com/sangrokjung/alpha_male_dl_server"><strong> Application demonstration video</strong></a>
+        <a href="https://youtube.com/shorts/-TZ80QRXgpo?feature=share"><strong> Application Guide Video</strong></a> · 
+        <a href="https://youtu.be/UgHFImf1tXE"><strong> Application demonstration video</strong></a> <br>
+        <a href="https://docs.google.com/presentation/d/1UMjK3EdXTQ1Kys3YkO15m39KGG3c-C08x1SQZEKWlKg/edit?usp=sharing"><strong>PPT</strong></a>
     </p>
 </div>
 
