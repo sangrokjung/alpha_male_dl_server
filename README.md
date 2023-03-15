@@ -612,10 +612,42 @@ The data table to be sent to the Client based on the results of the DL MODEL.
 <!-- DL -->
 ## DL
 
-### 
+**CelebA dataset** <br>
+
+<p align="center">
+    <img src="test_img/CelebA_dataset.png">
+</p>
+
+> CelebA데이터 셋의 landmark 데이터를 활용한 cut_off model 및 auto labeling model 학습
+
+**cut off model** <br>
+
+<p align="center">
+    <img src="test_img/cut_off_model.png">
+</p>
+
+> 전체 얼굴을 탐지하는 cut_off model을 통하여 얼굴 전체가 어느 정도 나오지 않은 사진의 경우 분석을 cut_off 시켜버리게 됨.
+
+**Auto labeling model** <br>
+
+<p align="center">
+    <img src="test_img/auto_labeling_model.png">
+</p>
+
+> CelebA dataset을 활용해 학습한 auto labeling model
+>   * 학습 데이터 자체가 정확하게 labeling되어 있지 않기 때문에 iou가 낮을 수 밖에 없다.
+
+**얼굴 유형 분류 모델** <br>
+
 <p align="center">
     <img src="test_img/model_result.png">
 </p>
+
+> 대한민국 유명인 110명의 데이터를 학습시킨 모델
+
+> 모델 한계
+>   * 1. 데이터를 수집할 때 인물 별 잘생김 정도가 아닌 부위 별 잘생김 정도를 수집했어야 했음.
+>   * 2. 프로젝트 시간 관계 상 auto labeling을 위해 정확하지 않은 데이터를 사용하여 높은 iou를 기대하기 어렵다.
 
 <!-- MOBILE -->
 ## Mobile
