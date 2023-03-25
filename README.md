@@ -80,6 +80,8 @@
 > **학습이 완료된 model을 통해 사용자의 얼굴 유형을 분석 후 결과 제공.**
 
 
+<br><br>
+
 <!-- TECH USED -->
 ## TECH Used
 
@@ -121,7 +123,7 @@
     </p><img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github">
 
 
-
+<br><br>
 
 <!-- PROJECT TEAM -->
 ## Project Team
@@ -172,6 +174,8 @@
 > * DL/ML
 >   * Selenium을 활용한 이미지 데이터 크롤링.
 >   * 모델 QA/Testing.
+
+<br><br>
 
 <!-- USER STORIES -->
 ## User Stories
@@ -253,6 +257,8 @@
 
 ---
 
+<br><br>
+
 <!-- SURVEY -->
 ## 사전 설문조사
 **팀원들 각자의 외모에 대한 기준이 서로 상이함에 따라 외모 유형을 나누는데 어려움이 존재.<br>
@@ -289,6 +295,8 @@
 > * Delta : 홍석천, 이준석, 유병재, 김풍, 강호동, 남창희, 유승민, 이진호, 마동석, 조세호, 피식대학 김민수, 주호민, 박지성, 윤석열, 이재명, 안철수, 장동민, 김범수, 이천수, 대성, 고창석
 > * Omega : 홍구, 오메가 사피엔, 진중권, 천하람, 미키광수, 최욱, 곽튜브, 딕헌터, 오달수, 흑자헬스, 변희재, 래퍼 면도, 염따, 김제동, 정종철, 국민의 힘 김재원, 오지헌
 
+
+<br><br>
 
 <!-- BACK-END SERVER -->
 ## BACK-END SERVER
@@ -421,6 +429,7 @@ CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.
 COPY ./ /app/
 ```
 
+<br><br>
 
 <!-- DL SERVER -->
 ## DL Server
@@ -572,6 +581,8 @@ CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.
 COPY ./ /app/
 ```
 
+<br><br>
+
 <!-- DATA BASE -->
 ## DataBase
 
@@ -599,14 +610,45 @@ DL 모델의 결과를 기반으로 클라이언트에 전송할 데이터 테�
 </p>
 
 
+<br><br>
 
 <!-- DL -->
 ## DL
 
-### 
+**CelebA dataset** <br>
+
+<p align="center">
+    <img src="test_img/CelebA_dataset.png">
+</p>
+
+> CelebA데이터 셋의 landmark 데이터를 활용한 cut_off model 및 auto labeling model 학습
+**cut off model** <br>
+
+<p align="center">
+    <img src="test_img/cut_off_model.png">
+</p>
+
+> 전체 얼굴을 탐지하는 cut_off model을 통하여 얼굴 전체가 어느 정도 나오지 않은 사진의 경우 분석을 cut_off 시켜버리게 됨.
+**Auto labeling model** <br>
+
+<p align="center">
+    <img src="test_img/auto_labeling_model.png">
+</p>
+
+> CelebA dataset을 활용해 학습한 auto labeling model
+>   * 학습 데이터 자체가 정확하게 labeling되어 있지 않기 때문에 iou가 낮을 수 밖에 없다.
+**얼굴 유형 분류 모델** <br>
+
 <p align="center">
     <img src="test_img/model_result.png">
 </p>
+
+> 대한민국 유명인 110명의 데이터를 학습시킨 모델
+> 모델 한계
+>   * 1. 데이터를 수집할 때 인물 별 잘생김 정도가 아닌 부위 별 잘생김 정도를 수집했어야 했음.
+>   * 2. 프로젝트 시간 관계 상 auto labeling을 위해 정확하지 않은 데이터를 사용하여 높은 iou를 기대하기 어렵다.
+
+<br><br>
 
 <!-- MOBILE -->
 ## Mobile
@@ -651,6 +693,8 @@ DL 모델의 결과를 기반으로 클라이언트에 전송할 데이터 테�
 
 
 ---
+
+<br><br><br><br><br>
 
 # ENG
 
@@ -721,7 +765,7 @@ DL 모델의 결과를 기반으로 클라이언트에 전송할 데이터 테�
     </p><img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github">
 
 
-
+<br><br>
 
 <!-- PROJECT TEAM -->
 ## Project Team
@@ -783,6 +827,8 @@ DL 모델의 결과를 기반으로 클라이언트에 전송할 데이터 테�
 
 ---
 
+<br><br>
+
 <!-- SURVEY -->
 ## Pre-survey
 **Different team members have different standards for appearance, making it difficult to categorize appearance types.<br>
@@ -819,6 +865,8 @@ The hope is that if we get a lot of opinions through the survey, we'll be able t
 > * Delta : Hong, Seokcheon, Lee, Junseok, Yoo, Byungjae, Kim, Pung, Kang, Ho Dong, Nam, Changhee, Yoo, Seungmin, Lee, Jinho, Madongseok, Joseho, Pisik University, Kim, Minsoo, Joo, Homin, Park, Jisung, Yoon, Seokyeol, Lee, Jae Myung, Ahn, Cheolsoo, Jang, Dongmin, Kim, Bumsoo, Lee, DaeSung, Ko, Changseok
 > * Omega : Hong Gu, Omega Sapien, Jin Jung Kwon, Cheon Haram, Mickey Kwang Soo, Choi Wook, Kwak Tube, Dick Hunter, Oh Dal Soo, Blackjack Health, Byun Hee Jae, Rapper Shave, Yeom Ta, Kim Jedong, Jung Jong Chul, Power of the People, Kim Jae Won, Oh Ji-heon
 
+
+<br><br>
 
 <!-- BACK-END SERVER -->
 ## BACK-END SERVER
@@ -957,6 +1005,7 @@ CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.
 COPY ./ /app/
 ```
 
+<br><br>
 
 <!-- DL SERVER -->
 ## DL Server
@@ -1108,6 +1157,8 @@ CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.
 COPY ./ /app/
 ```
 
+<br><br>
+
 <!-- DATA BASE -->
 ## DataBase
 
@@ -1134,17 +1185,45 @@ The data table to be sent to the Client based on the results of the DL MODEL.
     <img src="test_img/ERD.png">
 </p>
 
-
+<br><br>
 
 <!-- DL -->
 ## DL
 
-### 
+**CelebA dataset** <br>
+
+<p align="center">
+    <img src="test_img/CelebA_dataset.png">
+</p>
+
+> Training a cut_off model and auto labeling model using landmark data from the CelebA dataset
+**cut off model** <br>
+
+<p align="center">
+    <img src="test_img/cut_off_model.png">
+</p>
+
+> A cut_off model to detect full faces, which cuts off the analysis for photos that don't show more or less of the face.
+**Auto labeling model** <br>
+
+<p align="center">
+    <img src="test_img/auto_labeling_model.png">
+</p>
+
+> Auto labeling model trained using CelebA dataset
+>   * The IOU is low because the training data itself is not accurately labeled.
+**Face Type Classification Models** <br>
+
 <p align="center">
     <img src="test_img/model_result.png">
 </p>
 
+> Model trained on data from 110 South Korean celebrities
+> Model limitations
+>   * 1. When collecting data, we should have collected handsomeness ratings by body part, not handsomeness ratings by person.
+>   * 2. Due to project timing, it is difficult to expect high IOUs using inaccurate data for auto-labeling.
 
+<br><br>
 
 <!-- MOBILE -->
 ## Mobile
