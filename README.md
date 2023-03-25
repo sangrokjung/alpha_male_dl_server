@@ -52,10 +52,6 @@
     </p>
 </div>
 
-
-# KOR
-
-
 ## BMC
 ### KEY ACTIVITES
 > **DL을 활용한 남성 얼굴 유형 분류.** <br>
@@ -128,50 +124,57 @@
 
 
 
-**정상록** : <a href="https://github.com/sangrokjung" target="_blank">github</a> - sesilao@naver.com
+**SangRok Jung** : <a href="https://github.com/sangrokjung" target="_blank">github</a> - sesilao@naver.com
 > * Lead
->   * 프로젝트 운영 및 관리.
->   * GitHub 정책 설정 및 운영 관리.
->   * Notion, Upbase를 통한 에자일 운영.
->   * PPT 기획 및 관리.
+>   * Project Lead.
+>   * Managing GitHub Repositories and Policies.
+>   * Notion, Upbase Management.
+>   * Manage schedules.
+>   * Planning and production of readme.
+>   * ppt planning and production.
 > * Back-End
->   * Docker를 활용한 서버 빌드.
->   * FastAPI를 활용한 API 개발, RDS, S3 연동.
+>   * Imaging DL Servers with Dockers
+>   * Leverage FastAPI to create POST Protocols for the Client to send.
+>   * Create an API to call DL.
+>   * Create an API that stores data sent by the Client in DB.
+>   * Connect with DataBase.
 > * Cloud
->   * EC2(Ubuntu, (G4dn, P4))를 활용한 딥러닝 모델 학습 서버 구축. 
->   * S3, EC2를 환용한 딥러닝 서버 개발 및 배포. 
->   * ECS를 활용한 백엔드 서버 개발 및 배포.
->   * GitHub Actions를 통한 딥러닝, 백엔드 서버 CICD 구축.
->   * RDS(PostgreSQL)를 활용한 DB Server 구축
+>   * Building an EC2 Ubuntu environment for DL learning. (G4dn, P4)
+>   * Deploying DL Server CICD with GitHub Actions and S3, EC2.
+>   * Deploying Back-End Server CICD with GitHub Actions and ECR, ECS, and ELB.
+>   * Deploying RDBMS PostgreSQL using RDS.
 > * DataBase.
->   *  PostgreSQL를 활용한 DB 구축 및 운영, 관리.
->   *  ERD 설계.
+>   *  Schema, table, and data CRUD utilizing PostgreSQL.
+>   *  ERD Production.
 > * Mobile
->   * Uizard를 활용한 디자인 목업
+>   * Design with Mockup.
 > * DL/ML
->   * Selenium을 활용한 이미지 데이터 크롤링.
+>   * Collection of data through crawling.
 
 
 
 
-**이승원** : <a href="https://github.com/diet-teacher" target="_blank">github</a> - lsw4556@daum.net
+**Seungwon Lee** : <a href="https://github.com/diet-teacher" target="_blank">github</a> - lsw4556@daum.net
 > * DL/ML
->   * 크롤링을 통한 데이터 수집.
->   * matplotlib와 Pandas를 활용한 설문조사 데이터 분석 및 시각화.
->   * Pytorch를 활용한 사람의 안면을 인식하는 첫번째 DL 모델 학습.
->   * Pytorch를 활용한 auto labeling을 하는 두번째 DL 모델 학습.
->   * Pytorch를 활용한 안면의 세가지 파트를 분류하는 하는 세번째 DL 모델 학습.
+>   * Collection of data through crawling.
+>   * Analyse surveyed data and visualized it using matplotlib and pandas
+>   * Trained the first DL model to find out human face is exist using Pytorch
+>   * Trained the second DL model that for auto labeling using Pytorch
+>   * Trained the third DL model to detect three parts of faces and classify there class using Pytorch
 
-**한재희** : <a href="https://github.com/82Hardy-J" target="_blank">github</a> - handjh6903@naver.com
+**Jaehee Han** : <a href="https://github.com/82Hardy-J" target="_blank">github</a> - handjh6903@naver.com
+> * Team work
+>   * Execute Leader's Command, Compliance with project rules.
 > * Mobile
->   * Image Picker를 활용한 카메라 기능 및 앨범 기능 활성화.
->   * HTTP Method를 통한 서버 호출 및 응답 수신.
->   * 서버에서 응답 받은 데이터 분석.
->   * MainPage, Select Page, ResultPage 개발.
->   * 로고 디자인.
+>   * Camera function and album function were activated using Image Picker.
+>   * It makes a request to the server using HTTP and Post and responds with information.
+>   * Parse the data received as a response using HTTP and put
+>   * Give the user MainPage, SelectPage,Show the ResultPage.
+>   * Create the features required for each page.
+>   * Designed the app logo.
 > * DL/ML
->   * Selenium을 활용한 이미지 데이터 크롤링.
->   * 모델 QA/Testing.
+>   * Collection of data through crawling.
+>   * Model Testing.
 
 <!-- USER STORIES -->
 ## User Stories
@@ -288,536 +291,6 @@
 > * Gamma : 침착맨, 지코, 조진웅, 황정민, 승리, 오정세, 류승룡, 이용진, 손흥민, 김종국, 류준열, 배우 김영철, 빅뱅 태양, 정우, 하하, 성시경, 송강호, 류승범, 기안84, 문재인, 윤도현, 유재석, 김동현, 이수근, 문상훈
 > * Delta : 홍석천, 이준석, 유병재, 김풍, 강호동, 남창희, 유승민, 이진호, 마동석, 조세호, 피식대학 김민수, 주호민, 박지성, 윤석열, 이재명, 안철수, 장동민, 김범수, 이천수, 대성, 고창석
 > * Omega : 홍구, 오메가 사피엔, 진중권, 천하람, 미키광수, 최욱, 곽튜브, 딕헌터, 오달수, 흑자헬스, 변희재, 래퍼 면도, 염따, 김제동, 정종철, 국민의 힘 김재원, 오지헌
-
-
-<!-- BACK-END SERVER -->
-## BACK-END SERVER
-
-**Before building a DL server, build a backend server to develop protocols to send and receive with the Client.**
-
-### Structuring FastAPI 
-
-```bash
-app
-├── __init__.py
-├── main.py
-├── core
-│   ├── models
-│   │   ├── database.py
-│   │   ├── models.py
-│   │   └── __init__.py
-│   └── schemas
-│       ├── __init__.py
-│       └── schema.py
-└── v1
-    ├── api.py
-    ├── load.py
-    ├── s3.py
-    └── __init__.py 
-```
-
-
-### API
-**1. 클라이언트에서 서버와 합의한 대로 매개변수에 데이터를 입력합니다.**<br>
-**2. 클라이언트가 입력한 파라미터 결과값에 따라 사용자 데이터는 DB에 저장되고, 클라이언트는 Response body 값을 얻습니다.**
-```python
-@router.post("/RegisterUserImg_sample")
-async def RegisterUserImg_sample(first_user: first_user_tbl, Model_rst:int, result: last_result, db: Session = Depends(get_db)):
-    c_first_user = models.Users()
-    c_first_user.user_img = first_user.user_img
-    c_first_user.age = first_user.age
-    c_first_user.mbti = first_user.mbti
-
-    Model_rst
-
-    if Model_rst == 0 or Model_rst == 6:
-        return result
-    elif Model_rst >= 1 and Model_rst < 6:
-        s3_url = handle_upload_img(first_user.user_img) # S3에 파일을 전송함과 동시에\ 주소 획득.
-        Model_rst = Model_rst
-        result.human = "True"
-        type = conv_type(Model_rst)
-        if Model_rst == 1:
-            result.male_type = "Alpha"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "alpha").first().dsc_text
-            ID = make_4_num(27, 36)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 2:
-            result.male_type = "Beta"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "beta").first().dsc_text
-            ID = make_4_num(37, 49)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 3:
-            result.male_type = "Gamma"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "gamma").first().dsc_text
-            ID = make_4_num(50, 62)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 4:
-            result.male_type = "Delta"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "delta").first().dsc_text
-            ID = make_4_num(63, 73)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 5:
-            result.male_type = "Omega"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "omega").first().dsc_text
-            ID = make_4_num(74, 84)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst, models.Male_IMG.id == ID[3]).first().url
-        c_first_user.user_img_s3_url = s3_url
-        c_first_user.cft_result = type
-        c_first_user.created_at = datetime.now()
-        c_first_user.created_by = "JSR"
-        db.add(c_first_user)
-        db.commit()
-
-        return result
-```
-
-### CICD
-**1. 로컬 환경에서 개발자는 GitHub으로 Push나 Merge를 합니다.** <br>
-**2. GitHub Action가 작성한 yml 파일에 맞추어 실행됩니다.** <br>
-**3. GitHub Action에 따라 dcooker image를 ECR에 저장합니다.** <br>
-**4. GitHub Action에 따라 ECS 작업 정의를 수행합니다.** <br>
-**5. 구성된 서비스에 따라 서버를 ELB에 배포합니다.**<br>
-<p align="center">
-    <img src="test_img/BACK-END_SERVER_CICD.PNG">
-</p>
-
-### Docker
-**이미지는 파이썬 3.10을 기반으로 구축되었습니다. <br>
-설치가 필요한 패키지는 requirements를 통해 설치되었습니다. .**
-```dockerfile
-FROM python:3.10-alpine
-
-WORKDIR /app
-
-COPY ./requirements.txt /app/requirements.txt
-
-RUN echo $PATH
-RUN echo "export PATH=$PATH:/usr/local/bin/docker" >> ~/.bashrc
-RUN cat ~/.bashrc
-RUN echo $PATH
-
-RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
-
-COPY . /app/
-
-CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.0", "--port", "80" ]
-
-COPY ./ /app/
-```
-
-
-<!-- DL SERVER -->
-## DL Server
-
-**클라이언트가 서버의 API를 호출하면, 학습된 DL MODEL을 통해 결과값을 DB와 S3 Bucket에 저장하고 응답 본문을 클라이언트에 반환합니다.**
-
-### API
-**1. 클라이언트가 전송한 사용자 데이터를 입력합니다.** <br>
-**2. 사용자 데이터의 사용자 이미지를 학습한 DL MODEL을 통해 결과값을 반환합니다.**<br>
-**3. DL MODEL의 결과 값에 따라 설정된 프로토콜에 따라 클라이언트에 응답 본문이 전송되고, 데이터는 DB와 S3에 저장됩니다.**<br>
-
-```python
-@router.post("/RegisterResult")
-async def RegisterResult(first_user: first_user_tbl, result: last_result, db: Session = Depends(get_db)):
-    c_first_user = models.Users()
-    c_first_user.user_img = first_user.user_img
-    c_first_user.age = first_user.age
-    c_first_user.mbti = first_user.mbti
-
-    Model_rst = run(first_user.user_img)
-
-    if Model_rst == 0 or Model_rst == 6:
-        return result
-    elif Model_rst >= 1 and Model_rst < 6:
-        s3_url = handle_upload_img(first_user.user_img)  # S3에 파일을 전송함과 동시에\ 주소 획득.
-        Model_rst = Model_rst
-        result.human = "True"
-        type = conv_type(Model_rst)
-        if Model_rst == 1:
-            result.male_type = "Alpha"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "alpha").first().dsc_text
-            ID = make_4_num(27, 36)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 2:
-            result.male_type = "Beta"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "beta").first().dsc_text
-            ID = make_4_num(37, 49)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 3:
-            result.male_type = "Gamma"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "gamma").first().dsc_text
-            ID = make_4_num(50, 62)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 4:
-            result.male_type = "Delta"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "delta").first().dsc_text
-            ID = make_4_num(63, 73)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        elif Model_rst == 5:
-            result.male_type = "Omega"
-            result.dsc = db.query(models.Male).filter(models.Male.male_type == "omega").first().dsc_text
-            ID = make_4_num(74, 84)
-            result.img1 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[0]).first().url
-            result.img2 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[1]).first().url
-            result.img3 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[2]).first().url
-            result.img4 = db.query(models.Male_IMG).filter(models.Male_IMG.male_id == Model_rst,
-                                                           models.Male_IMG.id == ID[3]).first().url
-        c_first_user.user_img_s3_url = s3_url
-        c_first_user.cft_result = type
-        c_first_user.created_at = datetime.now()
-        c_first_user.created_by = "JSR"
-        db.add(c_first_user)
-        db.commit()
-
-        return result
-```
-
-### CICD
-**1-1. 로컬 환경에서 AWS CLI를 사용하여 모델 weight 파일 및 deploy.sh 파일을 S3 버킷에 푸시합니다.**<br>
-**1-2. S3 버킷의 deploy.sh 파일을 EC2에서 CLI로 가져옵니다.**<br>
-**1-3. 로컬 환경에서 DL SERVER를 GitHub로 푸시합니다.**<br>
-**2. GitHub Actions이 실행됩니다.**<br>
-**2-1. GitHub Actions에서 생성한 yml 파일에 따라 S3 버킷에 코드를 업로드합니다.**<br>
-**3. GitHub Actions에서 생성한 yml 파일에 따라 모델 서버의 SSM 명령을 실행합니다.**<br>
-**3-1. 모델 서버는 CLI를 통해 버킷의 모델 weight 파일을 가져옵니다.**<br>
-**3-2. 도커 이미지를 구축합니다..**<br>
-**3-3. docker container가 실행됩니다.**<br>
-**4. 컨테이너가 이미 실행 중이면 중지하고 3-2부터 3-3까지 실행합니다..**<br>
-<p align="center">
-    <img src="test_img/DL_SERVER_Diagram.PNG">
-</p>
-
-### Docker
-**이미지는 우분투 기반 파이썬 3.10 버전으로 빌드되었습니다. <br>
-설치가 필요한 패키지는 requirements를 통해 설치되었습니다.**
-
-
-```dockerfile
-FROM ubuntu:latest
-
-WORKDIR /app
-
-COPY ./requirements.txt /app/requirements.txt
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    python3.10 \
-    python3.10-dev \
-    python3-pip \
-    libsm6 \
-    libxext6 \
-    libxrender-dev \
-    libglib2.0-0 \
-    libgl1-mesa-glx \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender-dev
-
-RUN pip3 install opencv-python-headless
-
-RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
-
-COPY . /app/
-
-CMD [ "uvicorn", "app.main:app", "--reload", "--workers", "1", "--host", "0.0.0.0", "--port", "80" ]
-
-COPY ./ /app/
-```
-
-<!-- DATA BASE -->
-## DataBase
-
-**user_tbl** <br>
-사용자가 입력한 데이터가 저장될 테이블입니다.
-> * user_img_s3 : 사용자 이미지가 저장될 s3의 주소입니다.
-> * user_img : USER IMG를 base64 형식으로 저장합니다.
-> * cft_result : 사용자의 분류 결과.
-> * age : 유저의 생년월일.
-> * mbti : 유저의 MBTI. <br>
-
-**male_tbl** <br>
-DL 모델의 결과를 기반으로 클라이언트에 전송할 데이터 테이블입니다.
-> * male_id : 분류 유형의 ID입니다.
-> * male_type : 유형 분류 값입니다.
-> * dsc_txt : 유형별 설명 값입니다. <br>
- 
-**img_tbl** <br>
-> * male_id : 이미지 유형.
-> * url : base64 형식으로 저장된 유형별 IMG.
-
-
-<p align="center">
-    <img src="test_img/ERD.png">
-</p>
-
-
-
-<!-- DL -->
-## DL
-
-### 
-<p align="center">
-    <img src="test_img/model_result.png">
-</p>
-
-<!-- MOBILE -->
-## Mobile
-### Flutter를 사용한 이유.
-### 1. 위젯
->   * Widget이란 Flutter에서 UI를 구성하는 모든 기본 요소를 말한다
->   * Flutter는 Widget을 사용하여 쉽고 빠르게 기능과 디자인을 진행 할 수 있다.
-### 2. 시간
->   * 처음 접하는 앱 개발이라는 분야를 제한된 한달 동안 완성 해야 했기 때문에 쉽고 빠른 Flutter를 선택했다.
-### 3. 선호도
-![flutterlove](https://user-images.githubusercontent.com/113483259/220819372-347604a8-7e4c-4150-9bac-e41cdfc46ece.png)
-![rnlove](https://user-images.githubusercontent.com/113483259/220819375-1ae41dd9-b0f8-42cc-baae-8ed14bfbe00b.png)
-<p align="left">
-    <img src="test_img/flutterVsRn.png">
-</p>
-
-
-**Flutter가 RN에 비해 점유율과 선호도가 높으며 실제 사업및 실제 프로젝트에서 사용중이다.**
-
-
-
-
-## 사용 방법
-1. 어플을 설치 후 실행시킨다.
-2. 오른쪽 상단 Appbar에 있는 카메라,앨범 아이콘 버튼을 눌러 상체 위로 나오는 촬영 및 사진 선택을 한다.
-3. 촬영 및 사진선택후 선택페이지에서 MBTI,Birth,연봉을 입력 후 분석버튼을 누른다.
-4. 잠시 기다린다음 결과페이지에서 본인의 분류된 정보를 확인한다.
-5. 본인 정보를 확인하였으면 오른쪽 상단 스크린샷,공유 버튼을 눌러 앨범으로 저장 또는 SNS로 공유를 한다.
-6. 다른 사진으로 다시 도전하고 싶다면 왼쪽 상단 집 모양 아이콘버튼을 누른후 2번으로 돌아가 다시 시도한다.
-
-
-## 사용 패키지
->* Name : image_picker            version : ^0.8.6+1
->* Name : intl                    version : ^0.17.0
->* Name : share_plus              version : ^6.3.0
->* Name : screenshot              version : ^1.3.0
->* Name : path_provider           version : ^2.0.2
->* Name : carousel_slider         version : ^4.2.1
->* Name : flutter_native_splash   version : ^2.2.17
->* Name : gallery_saver           version : ^2.3.2
->* Name : flutter_spinkit         version : ^5.1.0
-
-
----
-
-# ENG
-
-
-
-## BMC
-### KEY ACTIVITES
-> **Male face type classification using DL.** <br>
-> **Provide a male image for each type of user.**
-
-### KEY RESOURCES
-> **Image data of male celebrity face types classified by a survey.** <br>
-
-### VALUE PROPOSITION
-> **People who are curious about their appearance type can use AI to help them answer their questions.** <br>
-> **With AlphaMale, users will be able to find out which type their face belongs to and have fun sharing and comparing results with their friends.**
-
-### CHANNELS
-> **Application : "AlphaMale"** <br>
-
-### CUSTOMER SEGEMENTS
-> **People who are curious about their own or others' appearance type** <br>
-
-### Direction of travel
-> **Classify the face types of 110 Korean male celebrities based on data from a survey of 100 Korean adults in their 20s and 30s.**<br>
-> **Training a multi-object detection model with Faster RCNN with FPN by segmenting celebrity faces classified by a survey into three segments (full face, T-Zone, and lower canal).**<br>
-> **Once trained, the model analyzes the user's face type and provides results.**
-
-
-<!-- TECH USED -->
-## TECH Used
-
-### MOBILE
-<p align="left">
-    <img src="https://img.shields.io/badge/androidstudio-000000?style=for-the-badge&logo=androidstudio">
-    <img src="https://img.shields.io/badge/dart-000000?style=for-the-badge&logo=dart&logoColor=54ABE3">
-    <img src="https://img.shields.io/badge/flutter-000000?style=for-the-badge&logo=flutter&logoColor=6DBDEB">
-    <img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github">
-</p>
-
-### BACK-END
-<p align="left">
-    <img src="https://img.shields.io/badge/pycharm-000000?style=for-the-badge&logo=pycharm">
-    <img src="https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python">
-    <img src="https://img.shields.io/badge/fastapi-000000?style=for-the-badge&logo=fastapi">
-    <img src="https://img.shields.io/badge/postqresql-000000?style=for-the-badge&logo=postgresql">
-    <img src="https://img.shields.io/badge/githubactions-000000?style=for-the-badge&logo=githubactions">
-    <img src="https://img.shields.io/badge/docker-000000?style=for-the-badge&logo=docker">
-    <img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github">
-</p>
-
-### CLOUD
-<p align="left">
-    <img src="https://img.shields.io/badge/EC2-Amazon-000000?style=for-the-badge&logo=amazonec2">
-    <img src="https://img.shields.io/badge/RDS-Amazon-000000?style=for-the-badge&logo=amazonrds">
-    <img src="https://img.shields.io/badge/ECS-Amazon-000000?style=for-the-badge&logo=amazonecs">
-    <img src="https://img.shields.io/badge/S3-Amazon-000000?style=for-the-badge&logo=amazons3">
-</p>
-
-### DL/ML
-<p align="left">
-    <img src="https://img.shields.io/badge/jupyter-000000?style=for-the-badge&logo=jupyter">
-    <img src="https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python">
-    <img src="https://img.shields.io/badge/Pytorch-000000?style=for-the-badge&logo=pytorch">
-    <img src="https://img.shields.io/badge/numpy-000000?style=for-the-badge&logo=numpy&logoColor=5174C3">
-    <img src="https://img.shields.io/badge/pandas-000000?style=for-the-badge&logo=pandas&logoColor=A0BCDF">
-    <img src="https://img.shields.io/badge/opencv-000000?style=for-the-badge&logo=opencv">
-    </p><img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github">
-
-
-
-
-<!-- PROJECT TEAM -->
-## Project Team
-
-
-
-**SangRok Jung** : <a href="https://github.com/sangrokjung" target="_blank">github</a> - sesilao@naver.com
-> * Lead
->   * Project Lead.
->   * Managing GitHub Repositories and Policies.
->   * Notion, Upbase Management.
->   * Manage schedules.
->   * Planning and production of readme.
->   * ppt planning and production.
-> * Back-End
->   * Imaging DL Servers with Dockers
->   * Leverage FastAPI to create POST Protocols for the Client to send.
->   * Create an API to call DL.
->   * Create an API that stores data sent by the Client in DB.
->   * Connect with DataBase.
-> * Cloud
->   * Building an EC2 Ubuntu environment for DL learning. (G4dn, P4)
->   * Deploying DL Server CICD with GitHub Actions and S3, EC2.
->   * Deploying Back-End Server CICD with GitHub Actions and ECR, ECS, and ELB.
->   * Deploying RDBMS PostgreSQL using RDS.
-> * DataBase.
->   *  Schema, table, and data CRUD utilizing PostgreSQL.
->   *  ERD Production.
-> * Mobile
->   * Design with Mockup.
-> * DL/ML
->   * Collection of data through crawling.
-
-
-
-
-**Seungwon Lee** : <a href="https://github.com/diet-teacher" target="_blank">github</a> - lsw4556@daum.net
-> * DL/ML
->   * Collection of data through crawling.
->   * Analyse surveyed data and visualized it using matplotlib and pandas
->   * Trained the first DL model to find out human face is exist using Pytorch
->   * Trained the second DL model that for auto labeling using Pytorch
->   * Trained the third DL model to detect three parts of faces and classify there class using Pytorch
-
-**Jaehee Han** : <a href="https://github.com/82Hardy-J" target="_blank">github</a> - handjh6903@naver.com
-> * Team work
->   * Execute Leader's Command, Compliance with project rules.
-> * Mobile
->   * Camera function and album function were activated using Image Picker.
->   * It makes a request to the server using HTTP and Post and responds with information.
->   * Parse the data received as a response using HTTP and put
->   * Give the user MainPage, SelectPage,Show the ResultPage.
->   * Create the features required for each page.
->   * Designed the app logo.
-> * DL/ML
->   * Collection of data through crawling.
->   * Model Testing.
-
-
----
-
-<!-- SURVEY -->
-## Pre-survey
-**Different team members have different standards for appearance, making it difficult to categorize appearance types.<br>
-The hope is that if we get a lot of opinions through the survey, we'll be able to get mass-marketed data that everyone will find somewhat convincing.**<br>
-
-<p align="center">
-    <img src="test_img/pie_plot.png" height="400" width="400">
-</p>
-<p align="center">
-    <img src="test_img/plot (1).png" height="400" width="500"><br>
-    <strong>사전 설문조사 결과 순위</strong>
-</p><br>
-
-### Survey-based data classification 
-> Multiply the distribution of survey result types by 110 (the number of celebrities surveyed) to see how many celebrities are in each type.<br>
-> 110 * 21.8 = 23.98 - Alpha <br>
-> 110 * 21.4 = 23.54 - Beta <br>
-> 110 * 22.5 = 24.75 - Gamma<br>
-> 110 * 19.2 = 21.12 - Delta<br>
-> 110 * 15.2 = 16.72 - Omega<br>
-> Rounding each one up, we get 24 +24 + 25 + 21 +17 = 111, so we subtract 1 from Beta, which is the least different from 0.5 to the first decimal place.<br>
-> Therefore, we can conclude that the survey results are distributed as follows: Alpha: 24, Beta: 23, Gamma: 25, Delta: 21, and Omega: 17.<br>
-> The order of the highest appearance scores (Cha Eun-woo, Won Bin, ......, Kim Jae-won, Oh Ji-heon, People's Power) can be used to categorize types from Alpha to Omega.<br>
-
-
-<p align="center">
-    <img src="test_img/score_pie_plot.png" height="400" width=400"><br>
-</p>
-
-### 유형 분류 결과
-> * Alpha : Cha, Eunwoo, Wonbin, Hyunbin, Kang, Dongwon, V, Ko, Goo, Song, Kang, Lee, Dongwook, Stable, Liz, Seo, Kangjun, Jo, Inseong, Jung, Woosung, Kim, Soohyun, Gong, Park, Bo Gum, Nam, Juhyuk, Song, Jungki, Song, Seungheon, Im, Wan, Lee, Jongseok, Jungkook, Jang, Donggun, Park, Hyungsik
-> * Beta : Jung, Haein, Soesub, Lee, Byungheon, Ju, Hoon, Kim, Heechul, Cha, Seungwon, Jisung, Lee, Seunggi, Kang, HaNeul, Yoo, Ahn, Jaehyun, Cho, Jeong, Seok, Eun, Jiwon, Min, Kyunghoon, Yoo, Yeon, Seok, Kim, Woobin, Lee, Jungjae, Lee, Inpyo, Cha, Raewon, Oh, Ho, Lee, Sunkyun, Ha, Jungwoo, Cho, Kyu Sung, Song, Minho
-> * Gamma : Calm Man, Zico, Jo Jin Woong, Hwang Jung Min, Seungri, Oh Jung Se, Ryu Seung Ryong, Lee Yong Jin, Son Heung Min, Kim Jong Kook, Ryu Jun Yeol, actor Kim Young Cheol, BIGBANG Taeyang, Jung Woo, Ha Ha, Sung Sik, Song Kang Ho, Ryu Seung Bum, Kian 84, Moon Moon, Yoon Do Hyun, Yoo Jae Suk, Kim Dong Hyun, Lee Soo Geun, Moon Sang Hoon
-> * Delta : Hong, Seokcheon, Lee, Junseok, Yoo, Byungjae, Kim, Pung, Kang, Ho Dong, Nam, Changhee, Yoo, Seungmin, Lee, Jinho, Madongseok, Joseho, Pisik University, Kim, Minsoo, Joo, Homin, Park, Jisung, Yoon, Seokyeol, Lee, Jae Myung, Ahn, Cheolsoo, Jang, Dongmin, Kim, Bumsoo, Lee, DaeSung, Ko, Changseok
-> * Omega : Hong Gu, Omega Sapien, Jin Jung Kwon, Cheon Haram, Mickey Kwang Soo, Choi Wook, Kwak Tube, Dick Hunter, Oh Dal Soo, Blackjack Health, Byun Hee Jae, Rapper Shave, Yeom Ta, Kim Jedong, Jung Jong Chul, Power of the People, Kim Jae Won, Oh Ji-heon
 
 
 <!-- BACK-END SERVER -->
@@ -1144,10 +617,35 @@ The data table to be sent to the Client based on the results of the DL MODEL.
     <img src="test_img/model_result.png">
 </p>
 
-
-
 <!-- MOBILE -->
 ## Mobile
+### Flutter를 사용한 이유.
+### 1. 위젯
+>   * Widget이란 Flutter에서 UI를 구성하는 모든 기본 요소를 말한다
+>   * Flutter는 Widget을 사용하여 쉽고 빠르게 기능과 디자인을 진행 할 수 있다.
+### 2. 시간
+>   * 처음 접하는 앱 개발이라는 분야를 제한된 한달 동안 완성 해야한다.
+>   * 쉽고 빠른 Flutter를 사용하는것이 적합하다.
+### 3. 선호도
+![flutterlove](https://user-images.githubusercontent.com/113483259/220819372-347604a8-7e4c-4150-9bac-e41cdfc46ece.png)
+![rnlove](https://user-images.githubusercontent.com/113483259/220819375-1ae41dd9-b0f8-42cc-baae-8ed14bfbe00b.png)
+<p align="left">
+    <img src="test_img/flutterVsRn.png">
+</p>
+
+
+**Flutter가 RN에 비해 점유율과 선호도가 높으며 실제 사업및 실제 프로젝트에서 사용중이다.**
+
+
+
+
+## 사용 방법
+1. 어플을 설치 후 실행시킨다.
+2. 오른쪽 상단 Appbar에 있는 카메라,앨범 아이콘 버튼을 눌러 상체 위로 나오는 촬영 및 사진 선택을 한다.
+3. 촬영 및 사진선택후 선택페이지에서 MBTI,Birth,연봉을 입력 후 분석버튼을 누른다.
+4. 잠시 기다린다음 결과페이지에서 본인의 분류된 정보를 확인한다.
+5. 본인 정보를 확인하였으면 오른쪽 상단 스크린샷,공유 버튼을 눌러 앨범으로 저장 또는 SNS로 공유를 한다.
+6. 다른 사진으로 다시 도전하고 싶다면 왼쪽 상단 집 모양 아이콘버튼을 누른후 2번으로 돌아가 다시 시도한다.
 
 ## Why Use Flutter?
 RN(React Native) and Flutter are often used when creating applications.
@@ -1161,12 +659,6 @@ So why use Flutter instead of RN? Performance difference between RN and Flutter?
     >   * First of all, I had to experience the Front side for the first time and proceed with the project within a limited time of a month.
     >   * Therefore, I thought that it would be more efficient in terms of time to complete the project by designing and adding functions quickly and easily.
 ### 3. Popularity
-![flutterlove](https://user-images.githubusercontent.com/113483259/220819372-347604a8-7e4c-4150-9bac-e41cdfc46ece.png)
-![rnlove](https://user-images.githubusercontent.com/113483259/220819375-1ae41dd9-b0f8-42cc-baae-8ed14bfbe00b.png)
-<p align="left">
-    <img src="test_img/flutterVsRn.png">
-</p>
-
 >   * Last but not least is popularity.
 >   * As shown in the picture above, Flutter has a higher share and popularity than RN, and now it is chosen for business and real projects rather than for study, so I chose Flutter.
 
@@ -1178,7 +670,7 @@ So why use Flutter instead of RN? Performance difference between RN and Flutter?
 5. If you have confirmed your information, click the screenshot and share button at the top right to save it as an album or share it on social media.
 6. If you want to try again with a different photo, Onpress the Home button in the upper left corner and go back to step 2 and try again.
 
-## Package used
+## 사용 패키지(What package Pub?)
 >* Name : image_picker            version : ^0.8.6+1
 >* Name : intl                    version : ^0.17.0
 >* Name : share_plus              version : ^6.3.0
